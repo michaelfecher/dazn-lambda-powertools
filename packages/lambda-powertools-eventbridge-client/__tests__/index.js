@@ -6,7 +6,7 @@ AWS.EventBridge.prototype.putEvents = mockPutEvents
 global.console.log = jest.fn()
 
 const EventBridge = require('../index')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 
 beforeEach(() => {
   mockPutEvents.mockReturnValueOnce({

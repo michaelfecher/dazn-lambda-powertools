@@ -1,13 +1,13 @@
 {
-  "name": "@dazn/lambda-powertools-middleware-obfuscater",
+  "name": "@michaelfecher/lambda-powertools-middleware-obfuscater",
   "version": "1.28.1",
   "description": "Middy middleware to obfuscate the event for logging",
   "main": "index.js",
   "license": "MIT",
   "author": "Tom Rogers",
   "dependencies": {
-    "@dazn/lambda-powertools-correlation-ids": "^1.28.1",
-    "@dazn/lambda-powertools-logger": "^1.28.1"
+    "@michaelfecher/lambda-powertools-correlation-ids": "^1.28.1",
+    "@michaelfecher/lambda-powertools-logger": "^1.28.1"
   },
   "devDependencies": {
     "@middy/core": "^1.0.0",
@@ -18,5 +18,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "1677e98b658cacb1855644d6a16896e8866826fa"
 }

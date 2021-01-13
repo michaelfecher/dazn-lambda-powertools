@@ -14,10 +14,10 @@ Re-writing and maintaining this bootstrapping logic into every individual lambda
 
 The quickest way to get setup is to use the opinionated [pattern basic](/packages/lambda-powertools-pattern-basic) package.
 
-`npm install @dazn/lambda-powertools-pattern-basic`
+`npm install @michaelfecher/lambda-powertools-pattern-basic`
 
 ```javascript
-const wrap = require('@dazn/lambda-powertools-pattern-basic')
+const wrap = require('@michaelfecher/lambda-powertools-pattern-basic')
 
 module.exports.handler = wrap(async (event, context) => {
   return 42
@@ -94,25 +94,25 @@ An integrated suite of powertools for Lambda functions that reduces the effort t
 
 | Package | Install command |
 | --- | --- |
-| cloudwatchevents-client | npm install @dazn/lambda-powertools-cloudwatchevents-client |
-| correlation-ids | npm install @dazn/lambda-powertools-correlation-ids |
-| dynamodb-client | npm install @dazn/lambda-powertools-dynamodb-client |
-| eventbridge-client | npm install @dazn/lambda-powertools-eventbridge-client |
-| firehose-client | npm install @dazn/lambda-powertools-firehose-client |
-| http-client | npm install @dazn/lambda-powertools-http-client |
-| kinesis-client | npm install @dazn/lambda-powertools-kinesis-client |
-| lambda-client | npm install @dazn/lambda-powertools-lambda-client |
-| logger | npm install @dazn/lambda-powertools-logger |
-| middleware-correlation-ids | npm install @dazn/lambda-powertools-middleware-correlation-ids |
-| middleware-log-timeout | npm install @dazn/lambda-powertools-middleware-log-timeout |
-| middleware-obfuscater | npm install @dazn/lambda-powertools-middleware-obfuscater |
-| middleware-sample-logging | npm install @dazn/lambda-powertools-middleware-sample-logging |
-| middleware-stop-infinite-loop | npm install @dazn/lambda-powertools-middleware-stop-infinite-loop |
-| pattern-basic | npm install @dazn/lambda-powertools-pattern-basic |
-| pattern-obfuscate | npm install @dazn/lambda-powertools-pattern-obfuscate |
-| sns-client | npm install @dazn/lambda-powertools-sns-client |
-| sqs-client | npm install @dazn/lambda-powertools-sqs-client |
-| step-functions-client | npm install @dazn/lambda-powertools-step-functions-client |
+| cloudwatchevents-client | npm install @michaelfecher/lambda-powertools-cloudwatchevents-client |
+| correlation-ids | npm install @michaelfecher/lambda-powertools-correlation-ids |
+| dynamodb-client | npm install @michaelfecher/lambda-powertools-dynamodb-client |
+| eventbridge-client | npm install @michaelfecher/lambda-powertools-eventbridge-client |
+| firehose-client | npm install @michaelfecher/lambda-powertools-firehose-client |
+| http-client | npm install @michaelfecher/lambda-powertools-http-client |
+| kinesis-client | npm install @michaelfecher/lambda-powertools-kinesis-client |
+| lambda-client | npm install @michaelfecher/lambda-powertools-lambda-client |
+| logger | npm install @michaelfecher/lambda-powertools-logger |
+| middleware-correlation-ids | npm install @michaelfecher/lambda-powertools-middleware-correlation-ids |
+| middleware-log-timeout | npm install @michaelfecher/lambda-powertools-middleware-log-timeout |
+| middleware-obfuscater | npm install @michaelfecher/lambda-powertools-middleware-obfuscater |
+| middleware-sample-logging | npm install @michaelfecher/lambda-powertools-middleware-sample-logging |
+| middleware-stop-infinite-loop | npm install @michaelfecher/lambda-powertools-middleware-stop-infinite-loop |
+| pattern-basic | npm install @michaelfecher/lambda-powertools-pattern-basic |
+| pattern-obfuscate | npm install @michaelfecher/lambda-powertools-pattern-obfuscate |
+| sns-client | npm install @michaelfecher/lambda-powertools-sns-client |
+| sqs-client | npm install @michaelfecher/lambda-powertools-sqs-client |
+| step-functions-client | npm install @michaelfecher/lambda-powertools-step-functions-client |
 
 ### via Lambda layer
 

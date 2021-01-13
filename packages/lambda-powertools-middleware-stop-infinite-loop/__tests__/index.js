@@ -5,7 +5,7 @@ global.console.warn = consoleLog
 global.console.error = consoleLog
 
 const middy = require('@middy/core')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 const stopInfiniteLoop = require('../index')
 
 const invokeHandler = async (event, awsRequestId) => {

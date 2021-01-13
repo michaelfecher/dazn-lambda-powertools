@@ -8,7 +8,7 @@ AWS.Firehose.prototype.putRecordBatch = mockPutRecordBatch
 global.console.log = jest.fn()
 
 const Firehose = require('../index')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 
 beforeEach(() => {
   mockPutRecord.mockReturnValueOnce({

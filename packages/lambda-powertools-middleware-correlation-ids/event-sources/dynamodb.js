@@ -1,6 +1,6 @@
 const dynamo = require('aws-sdk/clients/dynamodb')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
-const Log = require('@dazn/lambda-powertools-logger')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
+const Log = require('@michaelfecher/lambda-powertools-logger')
 const consts = require('../consts')
 
 function isMatch (event) {

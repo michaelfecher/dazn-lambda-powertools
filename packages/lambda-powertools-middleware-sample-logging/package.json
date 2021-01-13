@@ -1,18 +1,19 @@
 {
-  "name": "@dazn/lambda-powertools-middleware-sample-logging",
+  "name": "@michaelfecher/lambda-powertools-middleware-sample-logging",
   "version": "1.28.1",
   "description": "Middy middleware to sample debug logs for a configurable % of invocations",
   "main": "index.js",
   "license": "MIT",
   "author": "Yan Cui",
   "dependencies": {
-    "@dazn/lambda-powertools-correlation-ids": "^1.28.1",
-    "@dazn/lambda-powertools-logger": "^1.28.1"
+    "@michaelfecher/lambda-powertools-correlation-ids": "^1.28.1",
+    "@michaelfecher/lambda-powertools-logger": "^1.28.1"
   },
   "devDependencies": {
     "@middy/core": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "1677e98b658cacb1855644d6a16896e8866826fa"
 }

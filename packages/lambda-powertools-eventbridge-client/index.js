@@ -1,8 +1,8 @@
 process.env.AWS_NODEJS_CONNECTION_REUSE_ENABLED = '1'
 const EventBridge = require('aws-sdk/clients/eventbridge')
 const client = new EventBridge()
-const Log = require('@dazn/lambda-powertools-logger')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const Log = require('@michaelfecher/lambda-powertools-logger')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 
 function tryJsonParse (data) {
   if (typeof data !== 'string') {

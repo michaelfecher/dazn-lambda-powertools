@@ -6,7 +6,7 @@ AWS.CloudWatchEvents.prototype.putEvents = mockPutEvents
 global.console.log = jest.fn()
 
 const CloudWatchEvents = require('../index')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 
 beforeEach(() => {
   mockPutEvents.mockReturnValueOnce({

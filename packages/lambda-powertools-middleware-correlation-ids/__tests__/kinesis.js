@@ -1,7 +1,7 @@
 const _ = require('lodash')
 const uuid = require('uuid/v4')
 const middy = require('@middy/core')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 const captureCorrelationIds = require('../index')
 
 global.console.log = jest.fn()

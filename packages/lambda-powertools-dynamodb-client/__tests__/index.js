@@ -10,7 +10,7 @@ AWS.DynamoDB.DocumentClient.prototype.batchWrite = mockBatchWrite
 AWS.DynamoDB.DocumentClient.prototype.transactWrite = mockTransactWrite
 
 const DynamoDB = require('../index')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 
 global.console.log = jest.fn()
 

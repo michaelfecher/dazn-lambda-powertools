@@ -1,5 +1,5 @@
 {
-  "name": "@dazn/lambda-powertools",
+  "name": "@michaelfecher/lambda-powertools",
   "private": true,
   "license": "MIT",
   "scripts": {

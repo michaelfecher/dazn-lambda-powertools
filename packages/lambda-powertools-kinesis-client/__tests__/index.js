@@ -8,7 +8,7 @@ AWS.Kinesis.prototype.putRecords = mockPutRecords
 global.console.log = jest.fn()
 
 const Kinesis = require('../index')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 
 beforeEach(() => {
   mockPutRecord.mockReturnValueOnce({

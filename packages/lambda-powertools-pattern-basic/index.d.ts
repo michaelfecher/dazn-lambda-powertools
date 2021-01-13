@@ -1,6 +1,6 @@
 import middy from "@middy/core";
 import { Callback, Context } from "aws-lambda";
-export * from "@dazn/lambda-powertools-middleware-correlation-ids";
+export * from "@michaelfecher/lambda-powertools-middleware-correlation-ids";
 
 declare type EventType<T, C> = T extends (
   event: infer EventArgType,

@@ -6,7 +6,7 @@ AWS.Lambda.prototype.invoke = mockInvoke
 AWS.Lambda.prototype.invokeAsync = mockInvokeAsync
 
 const Lambda = require('../index')
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require('@michaelfecher/lambda-powertools-correlation-ids')
 
 global.console.log = jest.fn()
 

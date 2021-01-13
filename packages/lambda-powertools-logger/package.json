@@ -1,5 +1,5 @@
 {
-  "name": "@dazn/lambda-powertools-logger",
+  "name": "@michaelfecher/lambda-powertools-logger",
   "version": "1.28.1",
   "description": "Logger that is tightly integrated with the rest of the lambda-powertools",
   "main": "index.js",
@@ -7,10 +7,11 @@
   "license": "MIT",
   "author": "Yan Cui",
   "dependencies": {
-    "@dazn/lambda-powertools-correlation-ids": "^1.28.1",
+    "@michaelfecher/lambda-powertools-correlation-ids": "^1.28.1",
     "uuid": "3.3.2"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "1677e98b658cacb1855644d6a16896e8866826fa"
 }

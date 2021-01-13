@@ -10,8 +10,8 @@ import {
   FirehoseTransformationResult,
   KinesisStreamEvent,
 } from "aws-lambda";
-import Log from "@dazn/lambda-powertools-logger";
-import CorrelationIds from "@dazn/lambda-powertools-correlation-ids";
+import Log from "@michaelfecher/lambda-powertools-logger";
+import CorrelationIds from "@michaelfecher/lambda-powertools-correlation-ids";
 
 export default function <T, R, C extends Context = Context>(params: {
   sampleDebugLogRate: number;
