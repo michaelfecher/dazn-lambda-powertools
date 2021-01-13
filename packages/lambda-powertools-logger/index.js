@@ -1,4 +1,5 @@
-const CorrelationIds = require('@dazn/lambda-powertools-correlation-ids')
+const CorrelationIds = require("@michaelfecher/lambda-powertools-correlation-ids")
+const { v4: uuid } = require("uuid")
 
 // Levels here are identical to bunyan practices
 // https://github.com/trentm/node-bunyan#levels
@@ -25,7 +26,7 @@ class Logger {
     level = process.env.LOG_LEVEL
   } = {}) {
     this.correlationIds = correlationIds
-    this.level = (level || 'DEBUG').toUpperCase()
+    this.level = (level || "DEBUG").toUpperCase()
     this.originalLevel = this.level
 
     if (correlationIds.debugEnabled) {
@@ -50,7 +51,7 @@ class Logger {
     }
 
     return {
-      ...params || {},
+      ...(params || {}),
       errorName: err.name,
       errorMessage: err.message,
       stackTrace: err.stack
@@ -62,10 +63,13 @@ class Logger {
     if (!this.isEnabled(level)) {
       return
     }
-
+    const id = uuid()
+    const timestamp = new Date().toISOString()
     const logMsg = {
       ...this.context,
       ...params,
+      id,
+      timestamp,
       level,
       sLevel: levelName,
       message
@@ -79,32 +83,39 @@ class Logger {
     }
 
     // re-order message and params to appear earlier in the log row
-    consoleMethods[levelName](JSON.stringify({ message, ...params, ...logMsg }, (key, value) => typeof value === 'bigint'
-      ? value.toString()
-      : value
-    ))
+    consoleMethods[levelName](
+      JSON.stringify({ message, ...params, ...logMsg }, (key, value) =>
+        typeof value === "bigint" ? value.toString() : value
+      )
+    )
   }
 
   debug (msg, params) {
-    this.log('DEBUG', msg, params)
+    this.log("DEBUG", msg, params)
   }
 
   info (msg, params) {
-    this.log('INFO', msg, params)
+    this.log("INFO", msg, params)
   }
 
   warn (msg, params, err) {
-    const parameters = !err && params instanceof Error ? this.appendError({}, params) : this.appendError(params, err)
-    this.log('WARN', msg, parameters)
+    const parameters =
+      !err && params instanceof Error
+        ? this.appendError({}, params)
+        : this.appendError(params, err)
+    this.log("WARN", msg, parameters)
   }
 
   error (msg, params, err) {
-    const parameters = !err && params instanceof Error ? this.appendError({}, params) : this.appendError(params, err)
-    this.log('ERROR', msg, parameters)
+    const parameters =
+      !err && params instanceof Error
+        ? this.appendError({}, params)
+        : this.appendError(params, err)
+    this.log("ERROR", msg, parameters)
   }
 
   enableDebug () {
-    this.level = 'DEBUG'
+    this.level = "DEBUG"
     return () => this.resetLevel()
   }
 
