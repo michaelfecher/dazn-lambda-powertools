@@ -63,16 +63,16 @@ class Logger {
     if (!this.isEnabled(level)) {
       return
     }
-    const id = uuid()
-    const timestamp = new Date().toISOString()
+    const logId = uuid()
+    const logTimestamp = new Date().toISOString()
     const logMsg = {
       ...this.context,
       ...params,
-      id,
-      timestamp,
+      logId,
+      logTimestamp,
       level,
       sLevel: levelName,
-      message
+      message: message
     }
 
     const consoleMethods = {
