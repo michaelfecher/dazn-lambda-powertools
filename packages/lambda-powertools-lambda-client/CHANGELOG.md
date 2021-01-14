@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/michaelfecher/dazn-lambda-powertools/compare/v1.28.1...v1.29.0) (2021-01-14)
+
+
+### Bug Fixes
+
+* **package:** add package-lock files ([c2add5b](https://github.com/michaelfecher/dazn-lambda-powertools/commit/c2add5b6408c1a07e0812c4da171a65acd2e66ab))
+* **package:** rename before publish ([7b41a11](https://github.com/michaelfecher/dazn-lambda-powertools/commit/7b41a11122a1141f1021597863f7a2757bc5c617))
+
+
+
+
+
 ## [1.28.1](https://github.com/getndazn/dazn-lambda-powertools/compare/v1.28.0...v1.28.1) (2020-12-10)
 
 **Note:** Version bump only for package @michaelfecher/lambda-powertools-lambda-client
