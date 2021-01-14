@@ -6,10 +6,6 @@
   "homepage": "https://github.com/getndazn/dazn-lambda-powertools#readme",
   "license": "MIT",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/getndazn/dazn-lambda-powertools.git"
-  },
   "bugs": {
     "url": "https://github.com/getndazn/dazn-lambda-powertools/issues"
   },

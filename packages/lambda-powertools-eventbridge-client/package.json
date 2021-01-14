@@ -14,10 +14,6 @@
   "license": "MIT",
   "author": "Yan Cui",
   "homepage": "https://github.com/getndazn/dazn-lambda-powertools#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/getndazn/dazn-lambda-powertools.git"
-  },
   "bugs": {
     "url": "https://github.com/getndazn/dazn-lambda-powertools/issues"
   },
